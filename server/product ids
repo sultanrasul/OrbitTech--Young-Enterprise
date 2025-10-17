@@ -1,0 +1,19 @@
+// TEST PRODUCTS
+price_ids = {
+    'Classic - White': 'price_1OEhhnBiow1GH6WmDUfDRbBw',
+    'Classic - Black': 'price_1OEhi0Biow1GH6WmNPStzF4r',
+    'Classic - Pink': 'price_1OEhgiBiow1GH6WmugPp2g9d',
+    'Classic - Blue': 'price_1OEhh3Biow1GH6WmJ8HGSpXM',
+    'Custom - Black': 'price_1OEhiKBiow1GH6WmIwlYed5H',
+    'Custom - White': 'price_1OEhjFBiow1GH6Wm5MD8foai',
+    'Custom - Pink': 'price_1OEhikBiow1GH6WmQiDmPJjL',
+    'Custom - Blue': 'price_1OEhiZBiow1GH6WmSuSGKbgL',
+    'Triangle - Black': 'price_1OEhfYBiow1GH6Wm8YsKWlBR',
+    'Triangle - White': 'price_1OEhfpBiow1GH6WmyW9QMR8Z',
+    'Triangle - Pink': 'price_1OEhgLBiow1GH6WmXnJZTvME',
+    'Triangle - Blue': 'price_1OEhg5Biow1GH6WmteZudM9x',
+    'Circle - White': 'price_1OEheqBiow1GH6Wm1GGaPl1d',
+    'Circle - Black': 'price_1OEhfGBiow1GH6WmfKu2Vgss',
+    'Circle - Blue': 'price_1OEhdKBiow1GH6WmmWIUOafG',
+    'Circle - Pink': 'price_1OEhcjBiow1GH6Wm7Bt8w9Zz'
+    }

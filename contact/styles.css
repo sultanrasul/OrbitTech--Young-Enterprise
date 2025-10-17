@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-image: url("/images/background.jpg");
+    font-family: B612 Mono;
+  }
+  
+/* CSS for the header */
+header {
+  padding: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  display: float;
+}
+
+.logo {
+  width: 20%;
+  float: left;
+  max-width: 180px;
+  padding: 10px;
+  /* min-width: 50px */
+}
+
+#nav {
+  padding: 15px;
+  border-radius: 45px;
+  border: 2px solid rgba(255, 255, 255, 0.70);
+  background: rgba(255, 255, 255, 0.40);
+  backdrop-filter: blur(12px);
+  float: right;
+  /* width: 400px; */
+  display: flex;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: right; /* Align buttons to the right within the container */
+  margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.button-container .button {
+    margin-left: 10px; /* Add some spacing between the buttons */
+}
+
+.button {
+  color: #000;
+  text-decoration: none;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.71);
+  background: rgba(255, 255, 255, 0.56);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+#cart-count {
+  position: absolute;
+  display: none;
+  top: -10px;
+  right: -10px;
+  background-color: rgba(67, 113, 150, 0.719); /* Change the background color as needed */
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+
+@media screen and (max-width: 640px) {
+  .button {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 502px) {
+  .button {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
+@media screen and (max-width: 474px) {
+  .button {
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 13px;
+  }
+  header {
+    padding: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    display: float;
+  }
+  #nav{
+    margin-top: 25px;
+    padding: 5px;
+    padding-right: 5px;
+  }
+}
+
+.button:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+  
+  
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  
+  /* Contact */
+  
+  
+  .contact {
+    /* background-color: #141414; */
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* transform: translateY(25%); */
+    font-family: 'Kumbh Sans', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .contact__container {
+    z-index: 1;
+    width: 200%;
+    /* max-width: 1300px; */
+    /* padding: 0 50px; */
+    background-size: cover;
+  }
+  
+  
+  .contact__content h1 {
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+  
+  }
+  
+  /* weqwrqrwqwr */
+  .border {
+    width: 100px;
+    height: 10px;
+    background: #34495e;
+    margin: 15px auto;
+    border-radius: 5px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  
+  }
+  
+  .contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: rgb(173, 170, 170);
+    padding: 20px 40px;
+    outline: none;
+    color: black;
+    transition: 0.5s;
+    border-radius: 10px;
+  
+    box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.998);
+  
+  }
+  
+  .contact-form-text:focus {
+    box-shadow: 0 0 8px 4px #7d7f81;
+  }
+  
+  textarea.contact-form-text {
+    resize: none;
+    height: 120px;
+  }
+  
+  .contact-form-btn {
+    float: right;
+    border: 0;
+    background: #34495e;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .contact-form-btn:hover {
+    background: #2980b9;
+  }
+  
+  
+  .btn btn-primary:hover {
+    background: #2980b9;
+  }
+  
+  .success {
+    float: left;
+    background: #5fc2678e;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 15px;
+    cursor: default;
+    animation: status 4s ease forwards;
+  }
+  
+  .failed {
+    float: left;
+    background: #d144448e;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 15px;
+    cursor: default;
+    animation: status 4s ease forwards;
+  }
+  
+  .defult {
+    float: left;
+    background: rgb(37, 214, 52);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 15px;
+    cursor: default;
+    animation: status 4s ease forwards;
+  }
+  
+  
+  @keyframes status {
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  
+  }
+  
+  .Toastify {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  @media screen and (max-width: 1296px) {
+    .Toastify {
+      font-size: large;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .Toastify {
+      font-size: larger;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .Toastify {
+      font-size: 24;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .Toastify {
+      font-size: 17px;
+    }
+  }
+  
+  /* CSS for the footer */
+  footer {
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.71);
+    background: rgba(255, 255, 255, 0.56);
+    backdrop-filter: blur(8px);
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    max-height: 92px;
+  }
+  
+  footer div {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .left {
+    float: left;
+    padding-left: 20px;
+    height: 60px;
+  }
+  
+  .right {
+    float: right;
+    height: 40px;
+    padding-right: 20px;
+  }

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbit Tech</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/images/icon.ico"/>
+  <link rel="stylesheet" href="styles.css?v=3.0">
+  <link href="https://fonts.googleapis.com/css?family=B612+Mono&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="/app.js?v=2.08"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+</head>
+
+<body>
+  <div id='success' class="animated fadeIn">
+    <div id='upper-side'>
+        <svg version="1.1" id="checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+          <path d="M131.583,92.152l-0.026-0.041c-0.713-1.118-2.197-1.447-3.316-0.734l-31.782,20.257l-4.74-12.65
+    c-0.483-1.29-1.882-1.958-3.124-1.493l-0.045,0.017c-1.242,0.465-1.857,1.888-1.374,3.178l5.763,15.382
+    c0.131,0.351,0.334,0.65,0.579,0.898c0.028,0.029,0.06,0.052,0.089,0.08c0.08,0.073,0.159,0.147,0.246,0.209
+    c0.071,0.051,0.147,0.091,0.222,0.133c0.058,0.033,0.115,0.069,0.175,0.097c0.081,0.037,0.165,0.063,0.249,0.091
+    c0.065,0.022,0.128,0.047,0.195,0.063c0.079,0.019,0.159,0.026,0.239,0.037c0.074,0.01,0.147,0.024,0.221,0.027
+    c0.097,0.004,0.194-0.006,0.292-0.014c0.055-0.005,0.109-0.003,0.163-0.012c0.323-0.048,0.641-0.16,0.933-0.346l34.305-21.865
+    C131.967,94.755,132.296,93.271,131.583,92.152z" />
+          <circle fill="none" stroke="#ffffff" stroke-width="5" stroke-miterlimit="10" cx="109.486" cy="104.353" r="32.53" />
+        </svg>
+        <h3 id='status'>
+        Success
+      </h3>
+    </div>
+    <div id='lower-side'>
+      <p id='message'>
+        
+      </p>
+      <a id="contBtn">Continue</a>
+    </div>
+  </div>
+  <header>
+    <img class="logo" src="images/logo.png" alt="Logo">
+    
+    <!-- <div id="stl_cont" style="float:left;margin-top:40px;width:20%;max-height:140px;"></div> -->
+    
+    <div id="nav">
+      <a href="/" class="button">Home</a>
+      <a href="/contact/" class="button">Contact</a>
+      <a href="/about" class="button">About</a>
+      <a id="cart-icon" class="button">
+        <i class='bx bx-cart-alt' style="scale: 1.5"></i>
+        <span id="cart-count">0</span>
+      </a>
+    </div>
+    
+    <div class="cart">
+      <h2 class="cart-title">Your Basket</h2>
+      <div class="cart-content">
+      </div>
+      <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">£0.00</div>
+      </div>
+      <button type="button" id="buynow" class="btn-buy">Buy Now</button>
+      
+      <i class="bx bx-x" id="close-cart"></i>
+
+  </div>
+  </header>
+  <main>
+    <h2>Introducing the GyroKey</h2>
+    <div class="services__container" id="blur">
+
+      <!-- triangle -->
+      <div class="services__card" data-tilt=""
+          style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+          <img src="/products/triangle/blue.png" class="services__image" alt="">
+          <h2 class="product-title">Triangle</h2>
+          <p class="price">£4.00</p>
+          <div class="js-tilt-glare"
+            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; border-radius: inherit;">
+            <div class="js-tilt-glare-inner"
+            style="position: absolute; top: 50%; left: 50%; pointer-events: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%); transform: rotate(180deg) translate(-50%, -50%); transform-origin: 0% 0%; opacity: 0; width: 800px; height: 800px;">
+            </div>
+          </div>
+          <div class="colour-buttons">
+            <button class="colours" style="background: #1a3455; transform: scale(1.5);"></button>
+            <button class="colours" style="background: #fa2c8c;"></button>
+            <button class="colours" style="background: #a09e9e;"></button>
+            <button class="colours" style="background: #2c2c2c;"></button>
+          </div>
+          <div class="add-to-cart"> <i class='bx bx-cart-add'></i> </div>
+      </div>
+    <!-- triangle -->
+
+    <!-- circle -->
+<div class="services__card" data-tilt="" 
+        style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+        <img src="/products/circle/pink.png" class="services__image" alt="">
+        <h2 class="product-title">Circle</h2>
+        <p class="price">£4.00</p>
+        <div class="js-tilt-glare"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; border-radius: inherit;">
+          <div class="js-tilt-glare-inner"
+            style="position: absolute; top: 50%; left: 50%; pointer-events: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%); transform: rotate(180deg) translate(-50%, -50%); transform-origin: 0% 0%; opacity: 0; width: 800px; height: 800px;">
+          </div>
+        </div>
+        <div class="colour-buttons">
+          <button class="colours" style="background: #1a3455;"></button>
+          <button class="colours" style="background: #fa2c8c; transform: scale(1.5);"></button>
+          <button class="colours" style="background: #a09e9e;"></button>
+          <button class="colours" style="background: #2c2c2c;"></button>
+        </div>
+
+        <div class="add-to-cart"> <i class='bx bx-cart-add'></i> </div>
+      </div>
+
+
+      <!-- circle -->
+      
+
+      <!-- square -->
+      <div class="services__card" data-tilt="" 
+        style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+        <img src="/products/classic/white.png" class="services__image" alt="">
+        <h2 class="product-title">Classic</h2>
+        <p class="price">£4.00</p>
+        <div class="js-tilt-glare"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; border-radius: inherit;">
+          <div class="js-tilt-glare-inner"
+            style="position: absolute; top: 50%; left: 50%; pointer-events: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%); transform: rotate(180deg) translate(-50%, -50%); transform-origin: 0% 0%; opacity: 0; width: 800px; height: 800px;">
+          </div>
+        </div>
+        <div class="colour-buttons">
+          <button class="colours" style="background: #1a3455;"></button>
+          <button class="colours" style="background: #fa2c8c;"></button>
+          <button class="colours" style="background: #a09e9e; transform: scale(1.5);"></button>
+          <button class="colours" style="background: #2c2c2c;"></button>
+        </div>
+        <div class="add-to-cart"> <i class='bx bx-cart-add'></i> </div>
+      </div>
+      <!-- square -->
+      
+
+      <!-- custom bevel -->
+      <div class="services__card" data-tilt="" 
+        style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+        <img src="/products/custom/black.png" class="services__image" alt="">
+        <h2 class="product-title">Custom</h2>
+        <p class="price">£5.00</p>
+        <div class="js-tilt-glare"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; border-radius: inherit;">
+          <div class="js-tilt-glare-inner"
+            style="position: absolute; top: 50%; left: 50%; pointer-events: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%); transform: rotate(180deg) translate(-50%, -50%); transform-origin: 0% 0%; opacity: 0; width: 800px; height: 800px;">
+          </div>
+        </div>
+        <div class="colour-buttons">
+          <button class="colours" style="background: #1a3455;"></button>
+          <button class="colours" style="background: #fa2c8c;"></button>
+          <button class="colours" style="background: #a09e9e;"></button>
+          <button class="colours" style="background: #2c2c2c; transform: scale(1.5);"></button>
+        </div>
+        <div class="add-to-cart"> <i class='bx bx-cart-add'></i> </div>
+      </div>
+      <!-- custom bevel -->
+
+    </div>
+    <p>
+  </main>
+  <footer>
+    <img class="left" src="images/young-enterprise.png">
+    <!-- <img class="right" src="images/facebook.svg"> -->
+
+    <!-- <a href="https://youtube.com" target="_blank" style="cursor: pointer;"><img class="right" src="images/youtube.svg" alt="YouTube"></a> -->
+    <a href="https://www.instagram.com/orbit.tech_/" target="_blank" style="cursor: pointer; vertical-align: middle;"><img class="right" src="images/instagram.png" alt="YouTube"></a>
+    <a href="https://www.tiktok.com/@orbittech22" target="_blank" style="cursor: pointer;vertical-align: middle;"><img class="right" src="images/tiktok.svg" style="scale: 1.2;" alt="TikTok"></a>
+
+    <!-- <img class="right" src="images/x.svg"> -->
+    </div>
+  </footer>
+  <script src="/vanilla-tilt.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^funkypanda\.me$ [NC]
+RewriteRule ^(.*)$ https://www.funkypanda.me/$1 [R=301,L]
